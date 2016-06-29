@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>米课</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="xiaoyun.css">
+</head>
+<body>
+	<div>
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="hidden-xs hidden-sm col-md-3 col-lg-3">
+							<div class="navbar-header navbar-left">
+		                        <a class="navbar-brand-mc" href="/">
+		                    		<img src="images2/Brand.png"/>
+		                        </a>
+	                    	</div>
+						</div>
+						<div class="hidden-xs visible-sm-block col-sm-2">
+	                    	<div class="navbar-header navbar-left">
+		                        <a class="navbar-brand-mc" href="/">
+		                        	<img src="images2/Brand-M.png"/>
+		                        </a>
+	                    	</div>
+                		</div>
+						<div class="visible-xs-block col-xs-2">
+							<div class="navbar-header navbar-left">
+								<a class="navbar-brand-mc" href="/">
+									<img src="images2/Brand-S.png"/>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-8 col-sm-5 col-md-5 col-lg-5">
+							<form class="navbar-form-mc">
+								<div class="input-group input-group-nav">
+									<input type="text" class="form-control" placeholder="查找课程..."  id="input-search">
+									<span class="input-group-btn">
+										<a role="button" class="btn btn-s">
+											<span class="glyphicon glyphicon-search"></span>
+										</a>
+									</span>
+								</div>
+							</form>
+						</div>
+						<div class="hidden-xs col-sm-5 col-md-4 col-lg-4">
+							<div id="navbar" class="navbar-collapse collapse">
+								<ul class="nav navbar-nav pull-right">
+									<li id="nav-index">
+										<a href="/">首页</a>
+									</li>
+									<li id="nav-course">
+										<a href="/course">课程</a>
+									</li>
+									<li id="nav-notice">
+										<a href="/announcement">公告</a>
+									</li>
+									<li>
+										<a href="/">登录</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</div>
+
+
+	<div class="content">
+		<div class="wrap">
+			<div class="container">
+				<div class="row">
+					 <div class="wrapper-intro col-xs-0 col-sm-6 col-md-8 col-lg-8">
+                        <img src="images2/MiLogo.png"/>
+                        <br/>
+                        <img src="images2/miTitle.png"/>
+                    </div>
+
+                    <div class="log-or-sign col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    	 <ul class="nav nav-tabs" id="tab-sl">
+                            <li class="active2"><a href="#login" id="tri-login">登录米课</a></li> 
+                            <li><a href="#register" style="margin-left: 10px;">注册·加入米课</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <form class="tab-pane fade in active">
+                                <div class="tab-info" id="login-info"></div>
+                                <label for="login-email" class="sr-only">邮箱</label>
+                                <input type="email" class="form-control" placeholder="邮箱">
+                                <label for="login-password" class="sr-only">密码</label>
+                                <input type="password" class="form-control" placeholder="密码">
+                                <div class="checkbox">
+                                <label class="f-white">
+                                <input type="checkbox" id="login-remember" checked> 记住我
+                                </label>
+                                <a class="pull-right forgot" href="/recover">忘记密码</a>
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block login">登录</button>
+                            </form>
+                            <form role="tabpanel" class="tab-pane fade" id="register" onsubmit="return false;">
+                                <div class="tab-info" id="register-info"></div>
+                                <label for="register-email" class="sr-only">邮箱</label>
+                                <input type="email" id="register-email" class="form-control" placeholder="邮箱" required autofocus>
+                                <label for="register-password" class="sr-only">密码</label>
+                                <input type="password" id="register-password" class="form-control" placeholder="密码" required>
+                                <button class="btn btn-lg btn-primary btn-block register">注册</button>
+                            </form>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="section section-carousel">
+						<h4>新课速递</h4>
+						<div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="0"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="0"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="item active">
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+											<div class="thumbnail">
+												<a href=""><img src="images2/film.jpg"></a>
+												<div class="new-mask">
+													<a href="">
+														<div class="info-icon">
+															<div class="box-f">
+																<div class="box-s">
+																	<div class="box-t img-responsive">
+																		
+																	</div>
+																</div>
+															</div>
+														</div>
+														<h3><a href="#">文学与电影：艺术之互动</a></h3>
+													</a>
+												</div>
+												<div class="caption">
+                                                    <p>感受文学与电影交融之魅力</p>
+                                                </div>
+											</div>
+										</div>
+										 <div class="col-xs-12 col-sm-6 col-sm-6 col-md-6">
+                                            <div class="thumbnail">
+                                                <a>
+                                                    <img src="images2/mineral.jpg" alt="...">
+                                                    <div class="new-mask">
+                                                        <div class="info-icon">
+                                                            <div class="box-f">
+                                                                <div class="box-s">
+                                                                    <div class="box-t img-responsive" style="background-image: url(images2/geography.png);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3><a href="/course/476">地表双雄：生物和矿物</a></h3>
+                                                    </div>
+                                                </a>
+                                                <div class="caption">
+                                                    <p>看地表双雄谁与争锋</p>
+                                                </div>
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+								<div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-sm-6 col-md-6">
+                                            <div class="thumbnail">
+                                                <a>
+                                                    <img src="images2/biology.jpg" alt="...">
+                                                    <div class="new-mask">
+                                                        <div class="info-icon">
+                                                            <div class="box-f">
+                                                                <div class="box-s">
+                                                                    <div class="box-t img-responsive" style="background-image: url(images2/biology.png);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3><a href="/course/467">探索生物医学诺贝尔奖</a></h3>
+                                                    </div>
+                                                </a>
+                                                <div class="caption">
+                                                    <p>走进诺贝尔奖</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-sm-6 col-md-6">
+                                            <div class="thumbnail">
+                                                <a>
+                                                    <img src="images2/uncertainty.jpg" alt="...">
+                                                    <div class="new-mask">
+                                                        <div class="info-icon">
+                                                            <div class="box-f">
+                                                                <div class="box-s">
+                                                                    <div class="box-t img-responsive" style="background-image: url(images2/psychology.png);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3><a href="/course/475">不确定世界中的决策行为</a></h3>
+                                                    </div>
+                                                </a>
+                                                <div class="caption">
+                                                    <p>你真的了解你所做的决策吗</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-sm-6 col-md-6">
+                                            <div class="thumbnail">
+                                                <a>
+                                                    <img src="images2/pollution.jpg" alt="...">
+                                                    <div class="new-mask">
+                                                        <div class="info-icon">
+                                                            <div class="box-f">
+                                                                <div class="box-s">
+                                                                    <div class="box-t img-responsive" style="background-image: url(images2/air.png);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3><a href="/course/473">大气雾霾污染与健康</a></h3>
+                                                    </div>
+                                                </a>
+                                                <div class="caption">
+                                                    <p>我们的健康去了哪里</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-sm-6 col-md-6">
+                                            <div class="thumbnail">
+                                                <a>
+                                                    <img src="images2/usa.jpg" alt="...">
+                                                    <div class="new-mask">
+                                                        <div class="info-icon">
+                                                            <div class="box-f">
+                                                                <div class="box-s">
+                                                                    <div class="box-t img-responsive" style="background-image: url(images2/politics.png);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <h3><a href="/course/478">二十世纪中美文化交往诸问题</a></h3>
+                                                    </div>
+                                                </a>
+                                                <div class="caption">
+                                                    <p>那时的我们</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section section-btm">
+						<h4>
+							最热门课程榜
+							<small>更多</small>
+						</h4>
+						<ul class="row">
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/literature.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">俄罗斯文学经典的当代意义</a>
+
+									<div>
+										<a href="" class="tag-info">文学院</a>
+										<a href="" class="tag-info">董晓</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.7分</span>
+									</div>
+
+									<div f-12>
+										3学分
+										<a href="" style="color: #7d7d7d;">47评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/music.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">西方音乐通论</a>
+
+									<div>
+										<a href="" class="tag-info">吕晓依</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.7分</span>
+									</div>
+
+									<div f-12>
+										2学分
+										<a href="" style="color: #7d7d7d;">45评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/art.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">中国书画鉴赏</a>
+
+									<div>
+										<a href="" class="tag-info">文化艺术教育中心</a>
+										<a href="" class="tag-info">黄正明</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.9分</span>
+									</div>
+
+									<div f-12>
+										2学分
+										<a href="" style="color: #7d7d7d;">32评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/art.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">艺术原理与艺术经典</a>
+
+									<div>
+										<a href="" class="tag-info">文化艺术教育中心</a>
+										<a href="" class="tag-info">康尔</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.9分</span>
+									</div>
+
+									<div f-12>
+										2学分
+										<a href="" style="color: #7d7d7d;">30评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/art.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">视觉文化与摄影艺术</a>
+
+									<div>
+										<a href="" class="tag-info">文化艺术教育中心</a>
+										<a href="" class="tag-info">谢白</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.4分</span>
+									</div>
+
+									<div f-12>
+										2学分
+										<a href="" style="color: #7d7d7d;">27评论</a>
+									</div>
+								</div>
+							</li>
+							<li class="item col-xs-12 col-sm-6 col-md-4 col-lg-4">
+								<div class="item-card">
+									<div class="card-icon">
+										<div class="box-f">
+											<div class="box-s">
+												<div class="box-t img-responsive" style="background-image: url(images2/literature.png);">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<a href="" class="card-name">南大逸事</a>
+
+									<div>
+										<a href="" class="tag-info">教育研究院</a>
+										<a href="" class="tag-info">王运来</a>
+									</div>
+
+									<div class="score">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<img src="images2/star.png">
+										<span class="card-sub">4.9分</span>
+									</div>
+
+									<div f-12>
+										2学分
+										<a href="" style="color: #7d7d7d;">21评论</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+
+				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+					<div class="section ">
+						<h4>热门标签</h4>
+						<div class="tag-section">
+							<h5>学分</h5>
+							<a href="" class="tag-info">2学分</a>
+							<a href="" class="tag-info">3学分</a>
+							<a href="" class="tag-info">1学分</a>
+						</div>
+						<div class="tag-section">
+							<h5>类型</h5>
+							<a href="" class="tag-info">研讨课</a>
+							<a href="" class="tag-info">通识课</a>
+							<a href="" class="tag-info">公选课</a>
+							<a href="" class="tag-info">阅读计划</a>
+							<a href="" class="tag-info">文化素质课</a>
+							<a href="" class="tag-info">就业创业课</a>
+							<a href="" class="tag-info">优秀文化素质课</a>
+						</div>
+						<div class="tag-section">
+							<h5>院系</h5>
+							<a href="" class="tag-info">文学院</a>
+							<a href="" class="tag-info">历史学院</a>
+							<a href="" class="tag-info">创新创业学院</a>
+							<a href="" class="tag-info">哲学系</a>
+							<a href="" class="tag-info">信息管理学院</a>
+							<a href="" class="tag-info">环境学院</a>
+							<a href="" class="tag-info">国际学院</a>
+							<a href="" class="tag-info">法学院</a>
+							<a href="" class="tag-info">社会学院</a>
+							<a href="" class="tag-info">外国语学院</a>
+						</div>
+						<div class="tag-section">
+							<h5>分类</h5>
+							<a href="" class="tag-info">其他</a>
+							<a href="" class="tag-info">文学</a>
+							<a href="" class="tag-info">历史</a>
+							<a href="" class="tag-info">社会</a>
+							<a href="" class="tag-info">生物</a>
+							<a href="" class="tag-info">计算机</a>
+							<a href="" class="tag-info">政治</a>
+							<a href="" class="tag-info">医学/健康</a>
+							<a href="" class="tag-info">艺术</a>
+							<a href="" class="tag-info">创新创业</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="images2/MiLogo.png" class="pull-left footer-icon img-responsive">
+					<div class="pull-right footer-seg">
+						<h5>关于米课</h5>
+						 <p>原由米课团队开发运营，后交由小百合工作室进行全新改版与功能丰富，致力于搭建帮助南大各院系同学选好课程，分享感受，互动交友的校内平台。感谢同学们的大力支持。</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<img src="images2/LilyStudio.png" class="pull-left footer-icon img-responsive">
+					<div class="pull-right footer-seg">
+						<h5>关于小百合工作室</h5>
+						 <p>工作室成立于2000年，是由南京大学网络爱好者自发组织的一个学生团体，致力于传播校园网络文化，促进校园网络建设，服务广大同学，并为爱好网络和计算机科学与技术的同学提供一个交流学习、共同提高的平台。</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-info">
+				<p>
+					<a href="http://www.nju.edu.cn">南大首页</a>
+					<a href="http://jw.nju.edu.cn">南大教务</a>
+					<a role="button" href="#" data-toggle="modal" data-target="#modal-feedback">意见反馈</a>
+					<a style="color: #9a7c38;" href="/sorter/">米课分一分^ ^</a>
+				</p>
+				<p>Designed & developed by CPC, Hane, ZingSS, SuperLatte, Christine & Polaris.</p>
+				<p>Copyright &copy; Lily Studio, 2015-2016</p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
